@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@700&family=Josefin+Sans:wght@200&family=Rubik+Glitch&family=Sono:wght@200;500&display=swap');
+
+:root {
+    --color-body: #b6cbce;
+    --color-headling: #eef3db;
+    --color-base: #033f47;
+    --color-base2: #111;
+    --color-brand: #f1e20c;
+    --sidbar-width: 240px;
+    --font-base: "Bai Jamjuree";
+}
+
+
+body {
+    background-color: var(--color-base2);
+    color: var(--color-body);
+    font-family: var(--font-base), sans-serif;
+}
+/*FOnts*/
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-headling);
+    font-weight: 800;
+    
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: var(--color-brand);
+}
+
+img {
+    width: 100%;
+}
+.text-brand{
+    color: var(--color-brand);
+}
+.bg-base{
+    background-color: var(--color-base);
+    border-radius: 10px;
+    
+}
+
+.full-height{
+    min-height: 100vh;
+    height: 100%;
+    display: block;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+    /* CONTENT Wrapper*/
+#content-wrapper{
+    padding-left: var(--sidbar-width);
+}
+/*LOGO*/
+
+/*logo*/
+
+/*BTN*/
+button:hover{
+transform: scale(1.1);
+transition: all 0.5s ;
+
+}
+.btn{
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn-primary{
+    border: 23px;
+}
+
+.btn-primary
+.btn-primary:focus{
+    color: var(--color-base);
+  
+}
+
+.link-custom::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-brand);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+
+/*CARD*/
+
+/*Contact*/
+form input{
+    height: 60px;
+}
+.left{
+    margin-left: -22rem;
+}
+
+@media (max-width:768px){
+
+
+.hg{
+   transform: scale(0.5);
+}
+.lfo9{
+    margin-top: -5rem;
+}
+.navbar-brand img{
+    width: 100%;
+    transform: scale(0.5);
+}
+.navbar .container-fluid{
+    flex-direction: column;
+}
+.payment{
+    background-color: #111;
+}
+}
